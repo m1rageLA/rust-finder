@@ -1,0 +1,13 @@
+[package]
+name = "fsindex-core"
+version = "0.1.0"
+edition = "2021"
+
+
+[dependencies]
+anyhow = "1"
+walkdir = "2"
+chrono = { version = "0.4", features = ["serde"] }
+serde = { version = "1.0", features = ["derive"] }
+rusqlite = { version = "0.31", features = ["bundled","chrono"] }
+blake3 = "1.5"
